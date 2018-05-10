@@ -10,3 +10,8 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/blog
+    username: root
+    password: root
