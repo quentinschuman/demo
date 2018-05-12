@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,7 +10,7 @@ xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">
 <body>
 <div th:fragment="header">
     <h1>Thymeleaf</h1>
-    <a href="/users" th:href="@{~/users}">index</a>
+    <a href="/users" th:href="@{~/users}">用户列表首页</a>
 </div>
 </body>
 </html>

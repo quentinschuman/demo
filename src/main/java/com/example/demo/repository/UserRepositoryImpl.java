@@ -45,7 +45,7 @@ public class UserRepositoryImpl implements UserRepository{
     }
 
     @Override
-    public List<User> listusers() {
+    public List<User> listUser() {
         return new ArrayList<User>(this.userMap.values());
     }
 }

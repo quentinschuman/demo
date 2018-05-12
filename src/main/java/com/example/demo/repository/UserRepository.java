@@ -15,5 +15,5 @@ public interface UserRepository {
     User saveOrUpdateUser(User user);
     void deleteUser(Long id);
     User getUserById(Long id);
-    List<User> listusers();
+    List<User> listUser();
 }
