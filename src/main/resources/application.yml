@@ -14,6 +14,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
+  #如果已经配置datasource，则h2数据库不再有效
   h2:
     console:
       enabled: true
