@@ -5,6 +5,16 @@ spring:
     encoding: UTF-8
     cache: false
     mode: HTML5
+  datasource:
+    url: jdbc:mysql://localhost/demo?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
 #server:
 #  servlet:
 #    context-path: /demo
