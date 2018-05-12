@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import com.example.demo.domain.User;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
@@ -11,9 +12,9 @@ import java.util.List;
  * Date: 2018/5/11
  * Time: 21:16
  */
-public interface UserRepository {
-    User saveOrUpdateUser(User user);
-    void deleteUser(Long id);
-    User getUserById(Long id);
-    List<User> listUser();
+public interface UserRepository extends CrudRepository<User,Long>{
+//    User saveOrUpdateUser(User user);
+//    void deleteUser(Long id);
+//    User getUserById(Long id);
+//    List<User> listUser();
 }
